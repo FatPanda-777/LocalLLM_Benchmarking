@@ -1,0 +1,10 @@
+Model,Prompt_Type,Instruction_Passed,Baseline_RAM_MB,Peak_RAM_MB,RAM_Delta_MB,Page_Faults,TTFT_Sec,Duration_Sec,Tokens_Per_Sec,Avg_CPU_Sat_%,Disk_Read_MB
+gemma2:2b,Tier 1: Short Burst,TRUE,5015.06,7089.54,2074.48,172,7.04,7.36,0.54,52.02,1617.55
+gemma2:2b,Tier 2: Logic Loop,TRUE,7259.56,7533.17,273.61,9,2.3,21.34,8.11,72.62,272.84
+gemma2:2b,Tier 3: Context Flooder,TRUE,7545.37,7632.95,87.58,9,2,72.15,7.78,76.5,632.86
+phi3:latest,Tier 1: Short Burst,TRUE,7553.95,11115.93,3561.97,6,11.23,11.5,0.26,65.23,2159.12
+phi3:latest,Tier 2: Logic Loop,TRUE,11105.13,11142.4,37.27,2,1.52,23.43,7.13,73.13,48.12
+phi3:latest,Tier 3: Context Flooder,TRUE,11110.53,11878.15,767.62,212,3,352.64,4.39,96.34,3337.27
+llama3:latest,Tier 1: Short Burst,TRUE,10462.67,14502.61,4039.95,17,21.68,21.97,0.09,44.35,4470.23
+llama3:latest,Tier 2: Logic Loop,TRUE,14495.77,14539.62,43.85,1,4.38,24.59,3.21,63.75,53.96
+llama3:latest,Tier 3: Context Flooder,TRUE,14595.38,14642.18,46.81,17,5.78,155.44,3.42,60.7,401.47
